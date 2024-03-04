@@ -302,12 +302,28 @@ PRODUCT_PACKAGES += \
     
 PRODUCT_PACKAGES += \
     libavservices_minijail \
-    libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
     libcodec2_hidl@1.1.vendor \
     libcodec2_vndk.vendor \
     libOmxVdec \
     libOmxVenc
+
+# Media - Dolby vision
+PRODUCT_PACKAGES += \
+    libcodec2_soft_common.vendor \
+    libsfplugin_ccodec_utils.vendor \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libcodec2_vndk.vendor \
+    libminijail.vendor \
+    android.hardware.media.c2@1.0.vendor \
+    android.hardware.media.c2@1.1.vendor \
+    android.hardware.media.c2@1.2.vendor \
+    com.android.media.swcodec \
+    libc2dcolorconvert \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor.xml \
